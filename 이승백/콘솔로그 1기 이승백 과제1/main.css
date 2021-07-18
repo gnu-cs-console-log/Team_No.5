@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'EliceDigitalBaeum_Bold';
+}
+.nav{
+    display: flexbox;
+    background-color: #6666;
+    height: 100%;
+    width: 10vw;
+    background: rgb(150,153,156);
+    flex-direction: column;
+    float: left;
+    position:fixed;
+    top:0;
+    left:-300px;
+    z-index:1;
+    transition:all.35s
+}
+#link1{
+    position : absolute;
+    float: left;
+    top : 20vh;
+}
+#link2{
+    position : absolute;
+    float: left;
+    top : 30vh;
+}
+
+#link3{
+    position : absolute;
+    float: left;
+    top : 40vh;
+}
+
+
+.shoecase{
+    position: absolute;
+    align-content: center;
+    justify-content: flex-center;
+    top : 25vh;
+    left : 25vw;
+    z-index: 1;
+}
+
+.rowbox{
+    position: absolute;
+    display: flexbox;
+    justify-content: flex-start;
+    z-index: 2;
+    justify-content: center;
+    flex-direction: row;
+    
+    left : 24vw;
+    
+}
+.row1{
+    position: absolute;
+    top : 32vh;
+    display: flex;
+    align-items: start;
+    align-content: center;
+ 
+}
+.row2{
+    position: absolute;
+    top : 46vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+ 
+}
+
+
+#Nb992, #OffwhiteForce, #SmokeGrey, #CoolGrey,#WaveRunner, #ClearJade{
+    
+    margin-left : 7vh;
+    width : 13vw;
+    
+}
+#Nb992-info, #CoolGrey-info, #OffwhiteForce-info, #SmokeGrey-info, #ClearJade-info, #WaveRunner-info{
+    border : 1px solid white;
+    border-radius: 15%; 
+    background-color: white;
+    position : fixed;
+    width : 40vw;
+    height : 20vh;
+    top : 80vh;
+    display: none;
+}
+
+
+input[id ="menu"]{display :none;}
+input[id ="menu"] + label {display:block;margin:30px;width:60px;height:50px;position: relative;cursor: pointer;}
+input[id ="menu"] + label span{display:block; position:absolute;width: 100%; height:5px; border-radius: 30px;background-color: 000; transition: all .35s;}
+input[id ="menu"] + label span:nth-child(1) {top: 0;}
+input[id ="menu"] + label span:nth-child(2) {top: 50% ;transform:translateY(-50%);}
+input[id ="menu"] + label span:nth-child(3) {bottom: 0;}
+input[id ="menu"] + label {z-index:2;}
+input[id ="menu"] + label span{background-color: #000;}
+input[id ="menu"]:checked + label span:nth-child(1){top: 50% ;transform:translateY(-50%) rotate(45deg);}
+input[id ="menu"]:checked + label span:nth-child(2){opacity:0;}
+input[id ="menu"]:checked + label span:nth-child(3){bottom: 50% ; transform:translateY(50%) rotate(-45deg);}
+
+input[id="menu"]:checked + label + div {left:0;}
