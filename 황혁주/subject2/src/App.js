@@ -9,10 +9,8 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
-     <div id="main_container">
-        <Cardview />
-    </div>
-        <Midcontainer />
+      <Cardview />
+      <Midcontainer />
     </div>
    
   );

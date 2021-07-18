@@ -1,28 +1,30 @@
-import imageTag from "./imageTag";
+import ImageTag from "./ImageTag";
 function Cardview() { 
 return (
 <>
+    <div id="main_container">
     <center>
-            <table id="cardTable" border="3">
+            <table className="cardTable" border="3">
                 <tr>
-                    <td rowspan="2" colspan="3"><imageTag number = {1} /></td>
-                    <td rowspan="2" colspan="2"><imageTag number = {2} /></td>
-                    <td><imageTag number = {10} /></td>
+                    <td rowspan="2" colspan="3"><ImageTag number = {1} /></td>
+                    <td rowspan="2" colspan="2"><ImageTag number = {2} /></td>
+                    <td><ImageTag number = {10} /></td>
                     
                 </tr>
                 <tr>
-                <td><imageTag number = {9} /></td>
+                <td><ImageTag number = {9} /></td>
                 </tr>
                 <tr>
-                    <td><imageTag number = {3} /></td>
-                    <td><imageTag number = {4} /></td>
-                    <td><imageTag number = {5} /></td>
-                    <td><imageTag number = {6} /></td>
-                    <td><imageTag number = {7} /></td>
-                    <td><imageTag number = {8} /></td>
+                    <td><ImageTag number = {3} /></td>
+                    <td><ImageTag number = {4} /></td>
+                    <td><ImageTag number = {5} /></td>
+                    <td><ImageTag number = {6} /></td>
+                    <td><ImageTag number = {7} /></td>
+                    <td><ImageTag number = {8} /></td>
                 </tr>
             </table>
         </center>
+        </div>
         </>
     );
 }

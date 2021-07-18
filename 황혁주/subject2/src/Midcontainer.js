@@ -1,4 +1,6 @@
-import imageTag from "./imageTag";
+
+import ImageTag from "./ImageTag";
+
 function Midcontainer(){
     return (
         <div id="mid_container">
@@ -14,16 +16,16 @@ function Midcontainer(){
             <div id="backinner"><a href id="showall">모두 표시</a></div>
         <table>
             <tr>
-                <td><imageTag number ={12} /></td>
-                <td><imageTag number ={13} /></td>
-                <td><imageTag number ={14} /></td>
-                <td><imageTag number ={15} /></td>
-                <td><imageTag number ={16} /></td>
-                <td><imageTag number ={17} /></td>
-                <td><imageTag number ={18} /></td>
-                <td><imageTag number ={19} /></td>
-                <td><imageTag number ={20} /></td>
-                <td><imageTag number ={21} /></td>
+                <td><ImageTag number ={12} /></td>
+                <td><ImageTag number ={13} /></td>
+                <td><ImageTag number ={14} /></td>
+                <td><ImageTag number ={15} /></td>
+                <td><ImageTag number ={16} /></td>
+                <td><ImageTag number ={17} /></td>
+                <td><ImageTag number ={18} /></td>
+                <td><ImageTag number ={19} /></td>
+                <td><ImageTag number ={20} /></td>
+                <td><ImageTag number ={21} /></td>
             </tr>
         </table>
         </div>
